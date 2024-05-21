@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gerador de QR Code</title>
+  </head>
+  <body>
+    <h1>Gerador de QR Code</h1>
+    <input type="text" id="link" placeholder="Digite o link aqui" />
+    <button onclick="generateQRCode()">Gerar QR Code</button>
+    <div id="qrcode"></div>
+    <a id="downloadLink" style="display: none" download="qrcode.png"
+      >Baixar QR Code</a
+    >
+
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
